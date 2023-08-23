@@ -6,12 +6,7 @@ module.exports = {
 
   //create user
   add(req, res) {
-    var x = req.body;
-    var y = 2;
-    if (x%2) {
-      res.send('x%2 = ' +JSON.stringify(req.body))
-    }
-    
+      res.send(JSON.stringify(req.body))
   },
 
   //edit user
