@@ -3,7 +3,7 @@ const UserController = require('./controllers/UserController')
 module.exports = (app) => {
   app.get('/users', UserController.index),
 
-  app.post('/user', UserController.create),
+  app.post('/add', UserController.add),
 
   app.put('/user/:userId', UserController.put),
 
